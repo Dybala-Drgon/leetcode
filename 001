@@ -1,0 +1,16 @@
+class Solution {//初级版本
+    public int[] twoSum(int[] nums, int target) {
+        int[] num=new int[2];
+        int i,j;
+        for(i=0;i<nums.length-1;i++){
+            for(j=i+1;j<nums.length;j++){
+                if(target==nums[i]+nums[j]){
+                    num[0]=i;
+                    num[1]=j;
+                    return num;
+                }
+            }
+        }
+        return num;
+    }
+}
